@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="learnapp">
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <link rel="stylesheet"  href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+<div>
+<header>
+<nav class="navbar navta no-margin no-padding">
+<div class="container-fluid ">
+    <div class="navbar-header navbar-left no-margin no-padding">
+    <ul class="nav nav-tabs">
+    <li role="presentation" class="navbar-left color"><a href="#home">travlite</a></li>
+    </ul>
+    </div>
+  
+     <div class="navbar-header navbar-right no-margin no-padding">
+  <ul class="nav nav-tabs">
+
+  <li role="presentation"><a href="#work">track</a></li>
+    <li role="presentation"><a href="#order">bookatrolley</a></li>
+     <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learn more <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#work">How does travlite trolley works?</a></li>
+            <li><a href="#">why to book travlite trolley</a></li>
+            
+          </ul>
+        </li>
+
+    </ul>
+      </div>
+</div>
+</nav>
+</header>
+</div>
+<ng-view></ng-view>
+<div>
+ <footer class="foot">
+      <div class="container">
+        <p>this is the footer</p>
+         
+            
+              <div class="col-md-6">
+                <ul class="color">
+
+       <li ><a href="#">About</a></li>
+        <li ><a href="order.html">Order us</a></li>
+        </ul>
+         </div>
+
+        <div class="col-md-6">
+          <address>
+  <strong>Twitter, Inc.</strong><br>
+  1355 Market Street, Suite 900<br>
+  San Francisco, CA 94103<br>
+  <abbr title="Phone">P:</abbr> (123) 456-7890
+            </address>
+
+         <address>
+  <strong>Full Name</strong><br>
+  <a href="mailto:#">first.last@example.com</a>
+         </address>
+        </div>
+             
+
+
+      </div>
+
+
+  </footer>
+
+</div>
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

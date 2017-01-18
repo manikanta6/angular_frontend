@@ -1,0 +1,78 @@
+<div class="panel panel-default" >
+<div class="panel-heading"><h4>Basic Information</h4></div>
+  <div class="panel-body">
+  <div></div>
+  <div class="container">
+
+  <div class=" col-md-4">
+    Email address<input type="email"   placeholder="Email">
+  </div>
+    
+  <div class=" col-md-4">
+   firstName <input type="text"  placeholder="firstname">
+    </div>
+
+    <div class=" col-md-4">
+  lastname <input type="text" placeholder="lastname">
+</div>
+ </div>
+  </div>
+  </div>
+  <div class="container-fluid no-margin" ng-controller="senddata">
+
+<div class="panel panel-default  col-md-4 marginr">
+<div class="panel-heading"><h4>Pickup Address</h4></div>
+  <div class="panel-body ">
+
+<form method="get" ng-submit="Submit()">
+  <div class="form-group">
+    <label for="Address1">Address1</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Address1" ng-model="data.fradd1">
+  </div>
+  <div class="form-group">
+    <label for="Address2">Address2</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address2"  ng-model="data.fradd2">
+  </div>
+  <div class="form-group">
+    <label for="city">city</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="city" ng-model="data.frcity">
+  </div>
+   <div class="form-group">
+    <label for="state">state</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="state" ng-model="data.frstate">
+  </div>
+
+</div>
+ </div>
+
+ <div class="panel panel-default  col-md-4">
+<div class="panel-heading"><h4>Delivery Address</h4></div>
+  <div class="panel-body ">
+
+
+  <div class="form-group">
+    <label for="Address1">Address1</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Address1" ng-model="data.toadd1">
+  </div>
+  <div class="form-group">
+    <label for="Address2">Address2</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address2" ng-model="data.toadd2">
+  </div>
+  <div class="form-group">
+    <label for="city">city</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="city" ng-model="data.tocity">
+  </div>
+   <div class="form-group">
+    <label for="state">state</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="state" ng-model="data.tostate">
+  </div>
+
+ 
+
+
+ <button type="Submit" class="navbar-form navbar-right btn btn-primary" value="submit"><h4>Continue</h4></button>
+
+</form>
+</div>
+ </div>
+  </div>
